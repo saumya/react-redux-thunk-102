@@ -1,7 +1,9 @@
 React-Redux-Thunk-102
 ===================
 
-Started from [this project][8].
+Started from [this project][8] and added
+ - [react-router][10]
+ - [redux-router][9]
 
 [REST calls / API calls][2] in study using [Thunk middleware][3] for React
 
@@ -43,3 +45,5 @@ npm run pack
 [6]: https://github.com/fusenlabs/20v
 [7]: https://react.rocks
 [8]: https://github.com/saumya/react-redux-thunk-101
+[9]: https://github.com/acdlite/redux-router#differences-with-react-router-redux
+[10]: https://www.npmjs.com/package/react-router
