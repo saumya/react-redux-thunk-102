@@ -1,5 +1,6 @@
 //
 import { combineReducers } from 'redux'
+import { routerReducer } from 'react-router-redux'
 
 import DummyReducer from './DummyReducer'
 import OneReducer from './OneReducer'
@@ -10,7 +11,8 @@ import UIStateReducer from './UIStateReducer'
 const MyAppReducers = combineReducers({
   UIState:UIStateReducer,
   DummyReducer,
-  OneReducer
+  OneReducer,
+  routing: routerReducer
 });
 
 export default MyAppReducers
