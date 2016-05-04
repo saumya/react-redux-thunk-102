@@ -5,11 +5,22 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 
-import { Router, Route, browserHistory, useRouterHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory, useRouterHistory } from 'react-router'
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 
 import AllInOneReducer from './reducers'
+
 import ApplicationContainer from './containers/ApplicationContainer'
+import AppAdminContainer from './containers/AppAdminContainer'
+import AppUserContainer from './containers/AppUserContainer'
+
+import ApplicationControllerView from './components/ApplicationControllerView.react'
+import One from './components/One.react'
+import Two from './components/Two.react'
+import Three from './components/Three.react'
+
+import Menu from './components/Menu.react'
+
 import initialStateUtil, {getInitialState} from './util/initialStateUtil'
 
 let store = createStore(AllInOneReducer,getInitialState(),applyMiddleware(thunk))
@@ -21,9 +32,10 @@ render(
   <Provider store={store}>
     { /* Tell the Router to use our enhanced history */ }
     <Router history={history}>
-      <Route path="/" component={ApplicationContainer}>
-        <Route path="foo" component={ApplicationContainer}/>
-        <Route path="bar" component={ApplicationContainer}/>
+      <Route path="/" component={ApplicationControllerView}>
+        <IndexRoute component={Three} />
+        <Route path="/one" component={One} />
+        <Route path="/two" component={Two} />
       </Route>
     </Router>
   </Provider>,
