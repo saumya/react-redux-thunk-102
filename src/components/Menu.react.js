@@ -1,7 +1,8 @@
 //
 'use strict';
 
-import React, {Component} from 'react';
+import React, {Component} from 'react'
+import MenuItem from './MenuItem.react'
 
 class Menu extends Component {
   constructor(props){
@@ -11,9 +12,9 @@ class Menu extends Component {
     var that = this;
     return (
       <ul>
-        <li onClick={that._onHomeClick}>Home</li>
-        <li onClick={that._onLoginClick}>Login</li>
-        <li onClick={that._onRegisterClick}>Register</li>
+        <MenuItem onItemClick={that._onHomeClick} itemName="Home MenuItem" />
+        <MenuItem onItemClick={that._onLoginClick} itemName="Login MenuItem" />
+        <MenuItem onItemClick={that._onRegisterClick} itemName="Register MenuItem" />
       </ul>
     );
   }
