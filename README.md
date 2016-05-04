@@ -6,7 +6,7 @@ Started from [this project][8] and added
  - [redux-router][9] ( New API )
  - [react-router-redux][11] ( Official API )
 
-We will be using the official one [react-router-redux][11] here.
+We will be using the official one [react-router-redux][11] here. Refering to [react-router-redux-example][12]
 
 [REST calls / API calls][2] in study using [Thunk middleware][3] for React
 
@@ -55,3 +55,4 @@ npm run pack
 [9]: https://github.com/acdlite/redux-router#differences-with-react-router-redux
 [10]: https://www.npmjs.com/package/react-router
 [11]: https://github.com/reactjs/react-router-redux
+[12]: https://github.com/StevenIseki/react-router-redux-example
