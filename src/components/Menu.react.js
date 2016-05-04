@@ -3,6 +3,7 @@
 
 import React, {Component} from 'react'
 import MenuItem from './MenuItem.react'
+import MenuItemLink from './MenuItemLink.react'
 import Nav from './Nav.react'
 
 class Menu extends Component {
@@ -12,6 +13,9 @@ class Menu extends Component {
         <MenuItem onItemClick={this._onHomeClick} itemName="Home MenuItem" />
         <MenuItem onItemClick={this._onLoginClick} itemName="Login MenuItem" />
         <MenuItem onItemClick={this._onRegisterClick} itemName="Register MenuItem" />
+        <MenuItemLink to="/one" itemName="One" />
+        <MenuItemLink to="/two" itemName="Two" />
+        <MenuItemLink isIndex={true} to="/" itemName="Home" />
       </Nav>
     );
   }
