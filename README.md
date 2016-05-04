@@ -3,7 +3,10 @@ React-Redux-Thunk-102
 
 Started from [this project][8] and added
  - [react-router][10]
- - [redux-router][9]
+ - [redux-router][9] ( New API )
+ - [react-router-redux][11] ( Official API )
+
+We will be using the official one [react-router-redux][11] here.
 
 [REST calls / API calls][2] in study using [Thunk middleware][3] for React
 
@@ -31,6 +34,7 @@ npm install --save redux-thunk
 
 npm install --save react-router
 npm install --save redux-router@beta
+npm install --save react-router-redux
 ```
 
 Then run
@@ -50,3 +54,4 @@ npm run pack
 [8]: https://github.com/saumya/react-redux-thunk-101
 [9]: https://github.com/acdlite/redux-router#differences-with-react-router-redux
 [10]: https://www.npmjs.com/package/react-router
+[11]: https://github.com/reactjs/react-router-redux
