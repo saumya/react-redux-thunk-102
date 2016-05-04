@@ -18,6 +18,7 @@ import ApplicationControllerView from './components/ApplicationControllerView.re
 import One from './components/One.react'
 import Two from './components/Two.react'
 import Three from './components/Three.react'
+import Home from './components/Home.react'
 
 import Menu from './components/Menu.react'
 
@@ -33,9 +34,10 @@ render(
     { /* Tell the Router to use our enhanced history */ }
     <Router history={history}>
       <Route path="/" component={ApplicationControllerView}>
-        <IndexRoute component={Three} />
+        <IndexRoute component={Home} />
         <Route path="/one" component={One} />
         <Route path="/two" component={Two} />
+        <Route path="/three" component={Three} />
       </Route>
     </Router>
   </Provider>,

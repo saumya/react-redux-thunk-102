@@ -15,6 +15,7 @@ class Menu extends Component {
         <MenuItem onItemClick={this._onRegisterClick} itemName="Register MenuItem" />
         <MenuItemLink to="/one" itemName="One" />
         <MenuItemLink to="/two" itemName="Two" />
+        <MenuItemLink to="/three" itemName="Three" />
         <MenuItemLink isIndex={true} to="/" itemName="Home" />
       </Nav>
     );
