@@ -20,8 +20,12 @@ class Menu extends Component {
     );
   }
   _onHomeClick(e){
+    debugger;
     console.log('Menu:_onHomeClick: synthetic event:',e);
     console.log('Menu:_onHomeClick: native event:',e.nativeEvent);
+    console.log('Menu: FIX THIS : Its not routing !');
+    //this.context.router.push('/');
+    //this.props.history.push('/');
   }
   _onLoginClick(){
     console.log('Menu:_onLoginClick');
