@@ -1,5 +1,7 @@
-React-Redux-Thunk-101
+React-Redux-Thunk-102
 ===================
+
+Started from [this project][8].
 
 [REST calls / API calls][2] in study using [Thunk middleware][3] for React
 
@@ -40,3 +42,4 @@ npm run pack
 [5]: https://medium.com/@firasd/quick-start-tutorial-using-redux-in-react-apps-89b142d6c5c1
 [6]: https://github.com/fusenlabs/20v
 [7]: https://react.rocks
+[8]: https://github.com/saumya/react-redux-thunk-101
