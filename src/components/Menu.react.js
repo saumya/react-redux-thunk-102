@@ -3,6 +3,7 @@
 
 import React, {Component} from 'react'
 import MenuItem from './MenuItem.react'
+import Nav from './Nav.react'
 
 class Menu extends Component {
   constructor(props){
@@ -11,11 +12,11 @@ class Menu extends Component {
   render(){
     var that = this;
     return (
-      <ul>
+      <Nav>
         <MenuItem onItemClick={that._onHomeClick} itemName="Home MenuItem" />
         <MenuItem onItemClick={that._onLoginClick} itemName="Login MenuItem" />
         <MenuItem onItemClick={that._onRegisterClick} itemName="Register MenuItem" />
-      </ul>
+      </Nav>
     );
   }
   _onHomeClick(e){
