@@ -28,9 +28,8 @@ class ApplicationControllerView extends Component {
 }
 // Bind to the events of the Store
 const mapStateToProps = (state, ownProps) => {
-  //debugger;
   console.log('ApplicationControllerView : mapStateToProps');
-
+  // This allows the Component to acces the following return as its props
   return {
     //active: ownProps.filter === state.visibilityFilter
     calledAPICount : state.DummyReducer.called
