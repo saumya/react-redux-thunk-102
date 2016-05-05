@@ -20,7 +20,7 @@ class ApplicationControllerView extends Component {
       <div>
         <div>Application Controller View : Root Controller View</div>
         <h2>Round Trip : {this.props.calledAPICount} </h2>
-        <div>Login status : {this.props.loginStatus}</div>
+        <h3>Showing : {this.props.uiState}</h3>
         <Menu id="navlist" />
         { this.props.children }
       </div>
@@ -34,7 +34,7 @@ const mapStateToProps = (state, ownProps) => {
   return {
     //active: ownProps.filter === state.visibilityFilter
     calledAPICount : state.DummyReducer.called,
-    loginStatus : state.UIState
+    uiState : state.UIState
   }
 }
 

@@ -4,6 +4,7 @@ export function getInitialState(){
   console.log('getInitialState');
   var a = {
     UIState: "home",
+    LoginStatus: "Not Logged in",
     DummyReducer:{version:0,called:0},
     OneReducer:{version:0,called:0}
   }
