@@ -18,7 +18,7 @@ let LoginContainer = ({ onClick, loginStatus }) => {
         //dispatch(loginAction(uName.value,uPassword.value))
         //dispatch(dummyAPIAction(uName.value,uPassword.value))
         onClick(uName.value,uPassword.value);
-        //uName.value = uPassword.value = ''
+        uName.value = uPassword.value = '' // Reset the values to blank
       }}>
         <input ref={node1 => { uName = node1 }} />
         <input ref={node2 => { uPassword = node2 }} />
