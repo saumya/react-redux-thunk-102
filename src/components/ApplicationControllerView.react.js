@@ -13,10 +13,13 @@ class ApplicationControllerView extends Component {
     console.group('ApplicationControllerView : render');
     console.log('this.props',this.props);
     console.log('this.state',this.state);
+    //console.log('this.calledAPICount',calledAPICount);
     console.groupEnd();
+    // UNDERSTAND : this.props.calledAPICount is got from mapStateToProps
     return (
       <div>
         <div>Application Controller View : Root Controller View</div>
+        <div>Round trip - {this.props.calledAPICount} times.</div>
         <Menu id="navlist" />
         { this.props.children }
       </div>
@@ -25,10 +28,12 @@ class ApplicationControllerView extends Component {
 }
 // Bind to the events of the Store
 const mapStateToProps = (state, ownProps) => {
+  //debugger;
   console.log('ApplicationControllerView : mapStateToProps');
+
   return {
     //active: ownProps.filter === state.visibilityFilter
-    state
+    calledAPICount : state.DummyReducer.called
   }
 }
 
