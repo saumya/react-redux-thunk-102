@@ -3,27 +3,21 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { loginAction, dummyAPIAction } from '../actions'
 
-let LoginContainer = ({ dispatch }) => {
+let LoginContainer = ({ onClick, loginStatus }) => {
   var uName,uPassword ;
-  var that = this ;
+  //var that = this ;
   return (
     <div>
+      <div>Status : { loginStatus }</div>
       <form onSubmit={e => {
         e.preventDefault()
-        /*
-        console.group("LoginContainer : '%s'", 'Login');
-        console.log('LoginContainer');
-        console.log(dispatch);
-        console.log('LoginContainer : Submit : uName', uName.value.trim());
-        console.log('LoginContainer : Submit : uPassword', uPassword.value.trim());
-        console.groupEnd();
-        */
         if (!uName.value.trim() || !uPassword.value.trim() ) {
           return
         }
 
         //dispatch(loginAction(uName.value,uPassword.value))
-        dispatch(dummyAPIAction(uName.value,uPassword.value))
+        //dispatch(dummyAPIAction(uName.value,uPassword.value))
+        onClick(uName.value,uPassword.value);
         //uName.value = uPassword.value = ''
       }}>
         <input ref={node1 => { uName = node1 }} />
@@ -34,5 +28,25 @@ let LoginContainer = ({ dispatch }) => {
   )
 }
 
-LoginContainer = connect()(LoginContainer)
+// Bind to the events of the Store
+const mapStateToProps = (state, ownProps) => {
+  console.log('LoginContainer : mapStateToProps');
+  // This allows the Component to acces the following return as its props
+  return {
+    loginStatus : state.LoginStatus
+  }
+}
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  console.log('LoginContainer : mapDispatchToProps');
+  return {
+    onClick: (name,pass) => {
+      //dispatch(setVisibilityFilter(ownProps.filter))
+      console.log('LoginContainer : onClick');
+      dispatch(dummyAPIAction(name,pass))
+    }
+  }
+}
+
+LoginContainer = connect(mapStateToProps,mapDispatchToProps)(LoginContainer)
 export default LoginContainer
