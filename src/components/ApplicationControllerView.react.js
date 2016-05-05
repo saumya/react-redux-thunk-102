@@ -19,7 +19,7 @@ class ApplicationControllerView extends Component {
     return (
       <div>
         <div>Application Controller View : Root Controller View</div>
-        <div>Round trip - {this.props.calledAPICount} times.</div>
+        <h2>Round Trip : {this.props.calledAPICount} </h2>
         <Menu id="navlist" />
         { this.props.children }
       </div>
