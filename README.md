@@ -1,9 +1,12 @@
 React-Redux-Thunk-102
 ===================
+Done with
+ - round trip from UI-server-UI.
+ - navigate to another route after getting some values from server
 
-Till now done with round trip from UI-server-UI.
-TODO: navigate to another route
+[Followed this][13] for routing.
 
+### initial setup
 Started from [this project][8] and added
  - [react-router][10]
  - [redux-router][9] ( New API )
@@ -18,6 +21,7 @@ We will be using the official one [react-router-redux][11] here. Refering to [re
 2. Official [Example codes][4]
 3. Example of [An app to enjoy a music channel with your favorite videos][6]
 4. [React Rocks][7] examples
+5. [Programatic Routing][13] example
 
 Setup
 ```
@@ -59,3 +63,4 @@ npm run pack
 [10]: https://www.npmjs.com/package/react-router
 [11]: https://github.com/reactjs/react-router-redux
 [12]: https://github.com/StevenIseki/react-router-redux-example
+[13]: https://github.com/reactjs/react-router-tutorial/tree/master/lessons/12-navigating#navigating-programatically
