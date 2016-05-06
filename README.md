@@ -1,6 +1,9 @@
 React-Redux-Thunk-102
 ===================
 
+Till now done with round trip from UI-server-UI.
+TODO: navigate to another route
+
 Started from [this project][8] and added
  - [react-router][10]
  - [redux-router][9] ( New API )
