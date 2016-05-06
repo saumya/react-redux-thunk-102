@@ -1,8 +1,8 @@
 //
-import React from 'react'
+import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import { loginAction, dummyAPIAction } from '../actions'
-
+/*
 let LoginContainer = ({ onClick, loginStatus }) => {
   var uName,uPassword ;
   //var that = this ;
@@ -27,6 +27,34 @@ let LoginContainer = ({ onClick, loginStatus }) => {
     </div>
   )
 }
+*/
+class LoginContainer extends Component {
+  render(){
+    var uName,uPassword ;
+    return(
+      <div>
+        <div>Status : { this.props.loginStatus }</div>
+        <form onSubmit={e => {
+          e.preventDefault()
+          if (!uName.value.trim() || !uPassword.value.trim() ) {
+            return
+          }
+          this.props.onClick(uName.value,uPassword.value);
+          uName.value = uPassword.value = '' // Reset the values to blank
+        }}>
+          <input ref={node1 => { uName = node1 }} />
+          <input ref={node2 => { uPassword = node2 }} />
+          <button type="submit"> Login </button>
+        </form>
+      </div>
+    )
+  }
+  componentDidUpdate (prevProps, prevState){
+    this.context.router.push('/two')
+  }
+}
+// ask for `router` from context
+LoginContainer.contextTypes = {router: React.PropTypes.object}
 
 // Bind to the events of the Store
 const mapStateToProps = (state, ownProps) => {
