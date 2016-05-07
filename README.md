@@ -1,5 +1,7 @@
 React-Redux-Thunk-102
 ===================
+Stuying the tool-chain.
+
 Done with
  - round trip from UI-server-UI.
  - navigate to another route after getting some values from server
