@@ -1,8 +1,14 @@
 React-Redux-Thunk-102
 ===================
-Stuying the tool-chain.
 
-Done with
+## What for what ?
+
+[React][15] - View of the application
+[Redux][14] - Data / Model / State of the application
+[Thunk][3] - Communicating with the server
+[Router][10] - Navigating into different parts of the application
+
+Done
  - round trip from UI-server-UI.
  - navigate to another route after getting some values from server
 
@@ -65,3 +71,7 @@ npm run pack
 [11]: https://github.com/reactjs/react-router-redux
 [12]: https://github.com/StevenIseki/react-router-redux-example
 [13]: https://github.com/reactjs/react-router-tutorial/tree/master/lessons/12-navigating#navigating-programatically
+[14]: https://github.com/reactjs/redux
+[15]: https://github.com/facebook/react
+
+
