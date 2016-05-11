@@ -3,10 +3,10 @@ React-Redux-Thunk-102
 
 ## What for what ?
 
-[React][15] - View of the application
-[Redux][14] - Data / Model / State of the application
-[Thunk][3] - Communicating with the server
-[Router][10] - Navigating into different parts of the application
+ - [React][15] - View of the application
+ - [Redux][14] - Data / Model / State of the application
+ - [Thunk][3] - Communicating with the server
+ - [Router][10] - Navigating into different parts of the application
 
 Done
  - round trip from UI-server-UI.
