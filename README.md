@@ -57,6 +57,9 @@ npm run 2js
 npm run pack
 ```
 
+### How it works ?
+This seems a surprise but `react-router` and `react-router-redux` once configured, just works as if there is no `redux`. Its simply just works.
+
 
 [1]: http://redux.js.org/docs/basics/ExampleTodoList.html
 [2]: http://redux.js.org/docs/advanced/AsyncActions.html
