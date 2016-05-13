@@ -1,6 +1,8 @@
 React-Redux-Thunk-102
 ===================
 
+An [introduction][16] is here.
+
 ## What for what ?
 
  - [React][15] - View of the application
@@ -76,5 +78,6 @@ This seems a surprise but `react-router` and `react-router-redux` once configure
 [13]: https://github.com/reactjs/react-router-tutorial/tree/master/lessons/12-navigating#navigating-programatically
 [14]: https://github.com/reactjs/redux
 [15]: https://github.com/facebook/react
+[16]: http://saumya.github.io/ray/articles/66/
 
 
