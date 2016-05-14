@@ -1,4 +1,4 @@
-//
+// All the constants used in the application
 var AppConstants = {
   VERSION : "1.0.0",
   AUTHOR : "saumya"
