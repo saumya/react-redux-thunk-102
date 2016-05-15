@@ -10,7 +10,7 @@ An [introduction][16] is here.
  - [Thunk][3] - Communicating with the server
  - [Router][10] - Navigating into different parts of the application
 
-Done
+Done in this project
  - round trip from UI-server-UI.
  - navigate to another route after getting some values from server
 
