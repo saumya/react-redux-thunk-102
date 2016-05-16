@@ -22,7 +22,8 @@ Started from [this project][8] and added
  - [redux-router][9] ( New API )
  - [react-router-redux][11] ( Official API )
 
-We will be using the official one [react-router-redux][11] here. Refering to [react-router-redux-example][12]
+We will be using the official one [react-router-redux][11] here. 
+Refering to [react-router-redux-example][12]
 
 [REST calls / API calls][2] in study using [Thunk middleware][3] for React
 
