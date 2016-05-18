@@ -1,7 +1,7 @@
 React-Redux-Thunk-102
 ===================
 
-An [introduction][16] is here.
+An [introduction][16] is here. TODO: document the details.
 
 ## What for what ?
 
